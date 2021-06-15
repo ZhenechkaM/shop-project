@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="">
+                            <img src="Images/LogoHere.png" alt="LogoHere">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="">Home</a></li>
+                            <li class="active">
+                                <a href="">Products</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a>Kitchen</a>
+                                    </li>
+                                    <li>
+                                        <a>Living room</a>
+                                    </li>
+                                    <li>
+                                        <a>Bedroom</a>
+                                    </li>
+                                    <li>
+                                        <a>Children room</a>
+                                    </li>
+                                    <li>
+                                        <a>Home Accesories</a>
+                                    </li>
+                                    <li>
+                                        <a>Bathroom</a>
+                                    </li>
+                                    <li>
+                                        <a>Garden</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Shipping</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <form class="form-search" method="get" action="" name="form">
+                                <input type="text" placeholder="search" name="search">
+                                <button>
+                                    <img src="Images/magnifier.png" alt="send">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-cart">
+                            <div class="cart">
+                                <div class="product-count" id="products-count">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">Device Type</div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-">
+                            <h1>Laptops and Tablets</h1>
+                        </div>
+                        <div class="col-select">
+                            <select>
+                                <option value="sort by price">sort by price</option>
+                                <option value="sort by name">sort by name</option>
+                                <option value="sort by date">sort by date</option>
+                                <option value="sort by popularity">sort by popularity</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board desktop">
+                                <img src="Images/desktop.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#1 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$599<sup>25</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board console">
+                                <img src="Images/console.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#2 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$1250<sup>99</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board watch">
+                                <img src="Images/watch.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#3 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$399<sup>50</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board laptop">
+                                <img src="Images/laptop.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#1 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$599<sup>25</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board ipod">
+                                <img src="Images/ipod.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#2 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$1250<sup>99</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board mobile">
+                                <img src="Images/mobile.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#3 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$399<sup>50</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board tablet">
+                                <img src="Images/tablet.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#1 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$599<sup>25</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board console">
+                                <img src="Images/console.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#2 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$1250<sup>99</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-article">
+                        <form method="" action="" name="">
+                            <div class="board watch_1">
+                                <img src="Images/watch_1.png" alt="Desktop">
+                                <div class="square"></div>
+                                <div onclick="myFunction(this)" class="heart"></div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h2>#3 Device Name</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><b>TYPE:</b> Laptop</p>
+                                </div>
+                                <div>
+                                    <p><b>SCREEN SIZE:</b> 7 inches</p>
+                                </div>
+                                <div>
+                                    <p><b>RAM:</b> 1 GB</p>
+                                </div>
+                                <div class="price">
+                                    <p><span>$399<sup>50</sup></span></p>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">MORE DETAILS</button>
+                                </div>
+                                <div class="btn">
+                                    <button value="" name="send">ADD TO CART<b class="white_cart"></b></button>
+                                </div> 
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">Footer</footer>
+
+    <!-- <div class="modal">
+        <div class="modal-block">
+            <form>
+                <div class="btn-close">X</div>
+                <h3>Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>Please call</button>
+            </form>
+        </div>
+    </div> -->
+    
+    <script src="app.js"></script>
+</body>
+</html>
